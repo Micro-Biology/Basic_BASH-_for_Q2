@@ -106,4 +106,30 @@ First make a new document, and open it in an editor (I'll use gedit):
     touch Q2_Analysis.sh
     gedit Q2_Analysis.sh
     
+First we have to put what is known as a shebang line, this is my prefered line below:
 
+    #!/bin/bash
+    set -e
+    set -u 
+
+The first line tells the terminal this is a BASH script, the second line tell the script to halt if there are any errors, and the final line stops the script if there are any unset variables.
+
+Then add your Qiime 2 pipeline that you want to be repeatable, you may want to just do each step in its own script or you may like to do the entire pipeline from start to finish, its up to you.
+
+To make the script executable first, run:
+
+    sudo chmod 755 Q2_Analysis.sh 
+    
+And then simply:
+
+    ./Q2_Analysis.sh
+    
+You will probably get some sort of errors, make sure your directories are called correctly, and that file names match. Most/any of the scripts in this tutorial will work when using shell scripts, so knock yourself out. Additonally ther is one more command I find very useful for working out where in your pipeline you are up to, echo:
+
+    echo "Hello World!"
+    echo "Copying files to Analysis folder"
+    echo "Backing up raw data files"
+    
+Well if you got this far, well done! You are ready to start using the CLI to make impress all your coworkers and friends (okay maybe not!). If you need any more help I advise googling any problems you have, and reading the manuals for each command if you need it to work slightly differently, the BASH manual can be found here: https://ss64.com/bash/
+
+Good luck!
