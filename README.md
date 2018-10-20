@@ -1,6 +1,8 @@
-# Basic_BASH_for_Q2
+# Basic BASH for Q2
 
 In this tutorial I will cover basic BASH commands for use in comand line interface (CLI) to complement the use of Qiime2. This will be from the perspective of an Ubuntu user but should cover most if not all Linux distrubutions (and probably MacOS with a little tweaking). If you are a novice CLI user I advise running through this tutorial and learning.
+
+## Folder navigation, and moving files
 
 In linux we use the 'cd' command for example:
 
@@ -99,6 +101,8 @@ Oh no I meant to move them into a folder Analysis within QiimeScripts, lets use 
     
 Great now we can run some qiime 2 scripts, but wouldn't it be good if we didn't have to type them out or copy and paste them everytime...?
 
+## Shell scripts
+
 Where there is a will there is a way, enter the Shell script.
 
 First make a new document, and open it in an editor (I'll use gedit):
@@ -124,12 +128,16 @@ And then simply:
 
     ./Q2_Analysis.sh
     
+## Trouble shooting
+    
 You will probably get some sort of errors, make sure your directories are called correctly, and that file names match. Most/any of the scripts in this tutorial will work when using shell scripts, so knock yourself out. Additonally ther is one more command I find very useful for working out where in your pipeline you are up to, echo:
 
     echo "Hello World!"
     echo "Copying files to Analysis folder"
     echo "Backing up raw data files"
-    
+
+## Final word
+
 Well if you got this far, well done! You are ready to start using the CLI to make impress all your coworkers and friends (okay maybe not!). If you need any more help I advise googling any problems you have, and reading the manuals for each command if you need it to work slightly differently, the BASH manual can be found here: https://ss64.com/bash/
 
 Good luck!
