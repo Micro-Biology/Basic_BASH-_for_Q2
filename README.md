@@ -4,18 +4,25 @@ In this tutorial I will cover basic BASH commands for use in comand line interfa
 
 In linux we use the 'cd' command for example:
 
-    cd ~ #this will direct us to your home directory
+this will direct us to your home directory:
+
+    cd ~
     
-    cd ~/QiimeScripts #this will direct us to the folder QiimeScripts in the home directory no matter where we currently are
-    cd QiimeScripts #this will direct us to the folder QiimeScripts that is contained within the current target directory 
+This will direct us to the folder QiimeScripts in the home directory no matter where we currently are:
+    
+    cd ~/QiimeScripts
+    
+his will direct us to the folder QiimeScripts that is contained within the current target directory:
+    
+    cd QiimeScripts 
     
 To go up one in the folder heirachy use:
 
     cd ..
     
-For example assuming you opened a terminal and ran these scripts you would first be taken to the home directory (~), then to ~/QiimeScripts, and then to ~/QiimeScripts/~/QiimeScripts, and then back to ~/QiimeScripts.
+For example assuming you opened a terminal and ran these scripts you would first be taken to the home directory ('~'), then to '~/QiimeScripts', and then to '~/QiimeScripts/QiimeScripts', and then back to '~/QiimeScripts'.
 
-But wait you're saying you got an error when running 'cd ~/QiimeScripts' !!!
+But wait you're saying you got an error when running 'cd ~/QiimeScripts':
 
     bash: cd: /home/nls/QiimeScripts: No such file or directory
 
@@ -27,15 +34,16 @@ And if you need to make a chain of folders:
 
     mkdir -p ~/QiimeScripts/folders/that/dont/exist/yet
     
-Oh no we didnt actually want all those folders there lets remove all the folders within QiimeScripts using 'rm'
+Oh no we didnt actually want all those folders there lets remove all the folders within QiimeScripts using 'rm':
 
     rm ~/QiimeScripts/folders
 
-Uh, not another error!
+Uh, not another error!:
 
     rm: cannot remove '/home/nls/QiimeScripts/folders': Is a directory
     
 This is because rm can only be used on files...
+
 ... I lied you can remove directories using 'rm -r' but be careful it will delete everything in those folders and they will not go to the recycling bin.
 
     rm -r ~/QiimeScripts/folders
@@ -53,7 +61,7 @@ Just as well we used 'trash' and not 'rm':
 
 There are other CLI based trash applications such as trash-restore ect, but for now just restore the files using the GUI.
 
-Right now lets navigate back to our folder:
+Right now you've restored the folder lets navigate back to our folder:
 
     cd ~/QiimeScripts
     
