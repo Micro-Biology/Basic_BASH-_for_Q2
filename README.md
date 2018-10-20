@@ -99,9 +99,11 @@ Oh no I meant to move them into a folder Analysis within QiimeScripts, lets use 
     mkdir Analysis
     mv *.fastq.gz Analysis/
     
-Great now we can run some qiime 2 scripts, but wouldn't it be good if we didn't have to type them out or copy and paste them everytime...?
-
+You are now ready to start learning Qiime 2! Start here https://docs.qiime2.org/2018.8/tutorials/ If you get stuck with CLI issues come back here.
+    
 ## Shell scripts
+
+Great now we can run some qiime 2 scripts, but wouldn't it be good if we didn't have to type them out or copy and paste them everytime...?
 
 Where there is a will there is a way, enter the Shell script.
 
