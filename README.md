@@ -20,7 +20,7 @@ To go up one in the folder heirachy use:
 
     cd ..
     
-For example assuming you opened a terminal and ran these scripts you would first be taken to the home directory ('~'), then to '~/QiimeScripts', and then to '~/QiimeScripts/QiimeScripts', and then back to '~/QiimeScripts'.
+For example assuming you opened a terminal and ran these scripts you would first be taken to the home directory, then to 'QiimeScripts', and then to 'QiimeScripts/QiimeScripts', and then back to 'QiimeScripts'.
 
 But wait you're saying you got an error when running 'cd ~/QiimeScripts':
 
