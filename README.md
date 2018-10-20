@@ -75,4 +75,35 @@ Alternatively you can use it on another directory eg:
 
     ls ~/
     
+  
 These are all the files and directories contained directly within the home directory.
+
+Right so lets run some qiime 2 scripts, but wait first we need to get the data from '~/Data'. ~~I'll just copy and paste it over~~
+
+No, we're CLI for life now!
+
+    ~/Data
+    dir
+    
+Thats a lot of files... okay I know we can use the * to mean any characters, lets try:
+
+    cp ~/Data/*.fastq.gz ~/QiimeScripts
+    
+Wow, that was even easier than Ctrl-C Ctrl-V! 
+
+Oh no I meant to move them into a folder Analysis within QiimeScripts, lets use the 'mv' command:
+
+    cd QiimeScripts
+    mkdir Analysis
+    mv *.fastq.gz Analysis/
+    
+Great now we can run some qiime 2 scripts, but wouldn't it be good if we didn't have to type them out or copy and paste them everytime...?
+
+Where there is a will there is a way, enter the Shell script.
+
+First make a new document, and open it in an editor (I'll use gedit):
+
+    touch Q2_Analysis.sh
+    gedit Q2_Analysis.sh
+    
+
