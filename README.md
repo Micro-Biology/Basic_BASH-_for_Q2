@@ -51,6 +51,7 @@ This is because rm can only be used on files...
     rm -r ~/QiimeScripts/folders
     
 Lets install an application that means are items can be sent to the recycling bin more easily:
+(WARNING: This will not work for MacOS, you can either use the program [here](https://github.com/morgant/tools-osx), you may also want to conser using [homebrew](https://brew.sh/), which can be used to install instead of 'apt-get'. I don't know how MacOS works so if anyone would like to help em out here that would be great!)
 
     sudo apt-get install trash-cli
     
